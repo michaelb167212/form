@@ -1,0 +1,199 @@
+* {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  body {
+    margin: 0;
+  
+  }
+
+  header {
+    background: rgb(136, 154, 167);
+    color: white;
+    padding: 4%;
+    text-transform: uppercase;
+  }
+
+  #topline {
+    border-top: solid 5px black;
+     border-bottom: solid 2px black;
+     border-left: none;
+     border-right: none;
+     height: 5px;
+   } 
+
+   #bottomline {
+    border: solid 3px black;
+    margin: 5% 0;
+  }
+
+  h2, legend {
+    color: black;
+    padding: 2%;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  legend {
+    text-align: left;
+    padding-left: 0;
+ }
+
+ label {
+    font-size: 1.5em;
+  }   
+
+fieldset{
+    border: 0;
+}
+
+label, select, textarea{
+    color: rbg(84, 81, 78);
+}
+
+
+
+#paypal, 
+#amazon, 
+#bitcoin,
+#credit-card,
+#other-intrest{
+    display: none; 
+}
+
+p{
+    font-size: 1.6em;
+}
+
+#error{
+    color: red;
+    font-weight: bold;
+    border: red solid 1px;
+    padding: 2%;
+    background: #C4EDDC;
+}
+
+
+/*************contact info***************/
+.top .box{
+    display: flex;
+    flex-direction: column;
+}
+
+.top input[required]{
+    text-align: left;
+    font-style: italic;
+}
+
+.top input, select {
+    text-align: left;
+    flex: 1;
+    background: rgb(218, 215, 219);
+    border: none;
+    padding: 4%;
+    font-size: 1.25em;
+    transition-duration: 1s;
+}
+
+.top input:focus {
+    border: solid 3px rgb(3, 1, 40);
+    background: rgb(240, 244, 239);
+}
+
+.top .box label {
+    padding-top: 3.5%;
+    padding-left: 0;
+    padding-bottom: 2%;
+    text-align: left;
+}
+/**********interests**************/
+
+.interest {
+    text-align: left;
+}
+  
+.interest .box, .interest p {
+    padding: 2%;
+    padding-left: 0;
+    text-align: left;
+  }
+  
+.interest label {
+    padding-left: 0;
+}
+
+.col {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    align-items: left;
+    display: inline-flex;
+    flex-direction: column;
+      flex-grow: 2;
+      flex-basis: 100px;
+      
+}
+
+input[type="checkbox"], input[type="radio"]{
+    width: 15px;
+    height: 15px;
+    border: 1px grey;
+    margin: 5px;
+}
+
+input[type="checkbox"]:hover, input[type="radio"]:hover {
+    background: grey;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+    background: blue;
+}
+/************button*****************/
+
+button {
+    flex: 1;
+    background: rgb(28, 128, 142);
+    color: white;
+    height: 60px;
+    font-size: 1.5em;
+    text-align: center;
+    transition-duration: 1s;
+  }
+
+  button:hover {
+    background: rgb(228, 65, 202);
+  }
+
+/************queries****************/
+@media(min-width: 768px){
+    .wrapper {
+      max-width: 1000px;
+      margin: auto;
+    }
+  
+    header {
+      padding: 1%;
+    }
+  
+    .top .box{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .top label {
+      flex: 1;
+    }
+  
+    .top input, .top select {
+      flex-grow: 3;
+      margin: 1%;
+      padding: 1%;
+    }
+  
+    .top #zip {
+      margin-right: 1%;
+    }
+  }
+  
