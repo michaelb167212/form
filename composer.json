@@ -1,7 +1,0 @@
-{
-    "name": "mbarreto/json",
-    "description": "Interactive form project, with input varification.",
-    "require": {
-        "monolog/monolog": "1.*"
-    }
-}
