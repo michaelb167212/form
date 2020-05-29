@@ -1,0 +1,12 @@
+{
+    "name": "michaelb/form",
+    "authors": [
+        {
+            "name": "michaelb167212",
+            "email": "michaelb167212@gmail.com"
+        }
+    ],
+    "require": {
+        "erusev/parsedown": "~1.0"
+    }
+}
